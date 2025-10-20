@@ -1,0 +1,278 @@
+🧭 1. GLOBAL STRUCTURE OVERVIEW
+🌐 SITE MAP (Hierarchical)
+
+/
+├── Home
+│   ├── Hero
+│   ├── Featured Projects
+│   ├── Services
+│   ├── Tech Stack
+│   ├── Testimonials
+│   ├── CTA Banner
+│   └── Footer CTA
+│
+├── About
+│   ├── Hero
+│   ├── Personal Story
+│   ├── Skill Breakdown
+│   ├── Tools & Technologies
+│   ├── Achievements / Certifications
+│   ├── Fun Facts (optional human element)
+│   └── CTA: “Let’s Work Together”
+│
+├── Portfolio
+│   ├── Hero
+│   ├── Project Gallery (filterable)
+│   ├── Case Studies
+│   ├── Client Feedback
+│   └── CTA Banner: “Bring Your Vision to Life”
+│
+├── Services
+│   ├── Hero
+│   ├── Core Services (Frontend, Backend, Fullstack)
+│   ├── Process Timeline
+│   ├── Pricing Snapshot / Engagement Models
+│   └── CTA: “Schedule a Discovery Call”
+│
+├── Testimonials
+│   ├── Hero
+│   ├── Client Quotes Carousel
+│   ├── Video Testimonials (if available)
+│   ├── Impact Stats
+│   └── CTA: “Join My Happy Clients”
+│
+├── Contact
+│   ├── Hero
+│   ├── Contact Form
+│   ├── Social Media Links
+│   ├── Location / Availability
+│   ├── FAQ
+│   └── Thank-You Section
+│
+└── (Optional)
+├── Blog
+│   ├── Hero
+│   ├── Featured Posts
+│   └── Categories (Web Dev, React, Freelance Tips)
+└── Legal
+├── Privacy Policy
+└── Terms of Service
+
+🧩 NAVIGATION STRUCTURE
+
+Header (Fixed, Glass-blurred)
+
+Logo (SVG warrior icon)
+
+Nav links: Home | About | Portfolio | Services | Testimonials | Contact
+
+CTA Button: “Hire Me” (<Button variant="default">)
+
+Dark/Light mode toggle (<Switch> or custom toggle)
+
+🦶 FOOTER STRUCTURE
+
+Quick Links (same as nav)
+
+Email contact badge
+
+Copyright text
+
+Social icons (GitHub, LinkedIn, Instagram)
+
+“Built with ❤️ using Next.js & shadcn/ui”
+
+📄 2. PAGE-BY-PAGE BREAKDOWN
+🏠 HOME PAGE
+
+Hero Section
+
+Headline: “Transforming Ideas into Elegant, Scalable Web Experiences”
+
+Tagline: “Full-Stack Developer building modern solutions with Next.js, Node.js, and clean design systems.”
+
+CTAs: <Button>View My Work</Button> and <Button variant="outline">Hire Me</Button>
+
+Components: <Button>, <Badge>, <Avatar>, subtle motion via Framer Motion
+
+Visuals: Developer illustration or warrior-style logo on right, animated tech icons floating (Next.js, MongoDB, Tailwind)
+
+Sections
+
+Featured Projects
+
+Cards with project thumbnails, tags, and “View Case Study” buttons
+
+Components: <Card>, <Badge>, <Carousel>
+
+Services Overview
+
+Three service cards (Frontend, Backend, Full-Stack Solutions)
+
+Components: <Card>, <Icon> from lucide-react
+
+Tech Stack
+
+Grid of tech icons with tooltips (<Tooltip>)
+
+Testimonials Preview
+
+Horizontal scroll of 2–3 quotes (<Carousel> + <Card>)
+
+CTA Banner
+
+Headline: “Let’s Build Something Impactful.”
+
+Button: “Start a Project”
+
+Background gradient + motion fade
+
+👨‍💻 ABOUT PAGE
+
+Hero Section
+
+Headline: “Meet Muhammad Huzaifa Yaqoob — The Developer Behind the Code”
+
+Tagline: “Turning business goals into digital experiences powered by solid engineering.”
+
+CTA: “Download CV” or “Let’s Connect”
+
+Sections
+
+Personal Story — Short, authentic narrative of journey & motivation.
+
+Components: <Card>, <Separator>, <Avatar>
+
+Skill Breakdown — Animated skill bars or badges per domain (Frontend, Backend, DevOps).
+
+Components: <Progress>, <Badge>
+
+Tools & Technologies — Grid of tool cards with small interaction effects.
+
+Components: <Tooltip>, <Card>
+
+Achievements — Certifications, major projects, or recognition.
+
+Components: <Card>, <Badge>
+
+CTA Section — “Want to collaborate on something exciting?” (<Button>)
+
+💼 PORTFOLIO PAGE
+
+Hero Section
+
+Headline: “Turning Ideas Into Pixel-Perfect, Scalable Solutions.”
+
+Tagline: “Browse my projects built with precision, creativity, and modern frameworks.”
+
+CTA: “Explore My Work”
+
+Sections
+
+Project Gallery
+
+Filter by category (All / Web Apps / Dashboards / UI Systems)
+
+Components: <Tabs>, <Card>, <Badge>
+
+Case Studies
+
+Each project opens into a detailed modal with overview, stack, problem/solution, results.
+
+Components: <Dialog>, <Separator>
+
+Client Feedback Snippets
+
+Compact testimonial quotes below each case study.
+
+CTA Banner
+
+“Have a project in mind? Let’s make it real.” (<Button>)
+
+⚙️ SERVICES PAGE
+
+Hero Section
+
+Headline: “Tailored Development Services to Power Your Vision.”
+
+Tagline: “From sleek frontends to robust APIs — I deliver complete solutions.”
+
+CTA: “Book a Free Consultation”
+
+Sections
+
+Core Services — Cards for “Frontend Development,” “Backend Development,” “Full-Stack Solutions.”
+
+Components: <Card>, <Icon>
+
+Process Timeline — 5-step animated process (Discovery → Design → Development → QA → Launch).
+
+Components: <Stepper> or custom <Timeline> layout
+
+Engagement Models — Hourly / Project-based / Retainer comparison.
+
+Components: <Tabs>, <Table>
+
+CTA Section — “Ready to get started?” with variant="secondary" button.
+
+🌟 TESTIMONIALS PAGE
+
+Hero Section
+
+Headline: “Trusted by Clients Worldwide.”
+
+Tagline: “What people say after working with me.”
+
+Sections
+
+Client Quotes Carousel — Animated rotation of quotes.
+
+Components: <Carousel>, <Card>
+
+Video Testimonials — Embedded videos with lightbox view.
+
+Components: <Dialog>
+
+Impact Stats — “15+ Projects Delivered”, “100% Client Satisfaction”.
+
+Components: <StatCard> (custom)
+
+CTA Section: “Your success story starts here.” (<Button>)
+
+📬 CONTACT PAGE
+
+Hero Section
+
+Headline: “Let’s Build Something Great Together.”
+
+Tagline: “Reach out for collaborations, freelance opportunities, or tech partnerships.”
+
+Sections
+
+Contact Form
+
+Fields: Name, Email, Project Type, Message
+
+Components: <Form>, <Input>, <Textarea>, <Button>
+
+Social Media Links
+
+GitHub, LinkedIn, WhatsApp, Instagram with hover icons
+
+Location & Availability
+
+Simple line map or timezone display (<Card> + <Badge>)
+
+FAQ Section — Quick clarifications about pricing, timeline, stack.
+
+Components: <Accordion>
+
+Thank-You Section — Message after form submission with subtle confetti animation.
+
+📰 BLOG (Optional for SEO)
+
+Hero: “Insights from a Full-Stack Developer.”
+
+Sections: Featured Articles, Topics (React, Performance, Freelance), Email Subscription.
+
+Components: <Card>, <Tag>, <Pagination>, <Input>.
